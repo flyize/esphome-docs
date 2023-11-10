@@ -84,6 +84,10 @@ the logs to see discovered Bluetooth Low Energy devices.
     # Example configuration entry for finding MAC addresses
     esp32_ble_tracker:
 
+    text_sensor:
+      - platform: ble_scanner
+        name: "BLE Devices Scanner"
+
 Using the configuration above, first you should see a ``Starting scan...`` debug message at
 boot-up. Then, when a BLE device is discovered, you should see messages like
 ``Found device AC:37:43:77:5F:4C`` together with some information about their
